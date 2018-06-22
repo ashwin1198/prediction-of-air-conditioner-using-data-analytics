@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3F70D5;
+    color: white;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<u><b><i><h1>APPLIANCES</h1></i></b></u>
+<br>
+<div class="col-25">
+        <label for="kwh"> </label>
+      </div>
+<table id="customers">
+  <tr>
+    <th>Appliance</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>A.C</b></td>
+    <td>{% if variable[0]==1 %}
+     Yes
+  {% else %}
+     No
+  {% endif %}</td>
+  </tr>
+    <tr>
+    <td><b>DRYER</b></td>
+    <td>{% if variable[1]==1 %}
+     Yes
+  {% else %}
+     No
+  {% endif %}</td>
+  </tr>
+    <tr>
+    <td><b>WASHING MACHINE</b></td>
+    <td>{% if variable[2]==1 %}
+     Yes
+  {% else %}
+     No
+  {% endif %}</td>
+  </tr>
+
+</table>
+<div class="col-25">
+<a href="mini.html">Click here for home page</a>
+    </div>
+</body>
+</html>
